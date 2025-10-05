@@ -1,0 +1,36 @@
+{
+    "contactUsForm": [
+        {
+            "objectKey": "contactUsPageNameField",
+            "action": "type",
+            "value": "TestUser"
+        },
+        {
+            "objectKey": "contactUsPageEmailField",
+            "action": "type",
+            "value": "mohan456@gmail.com"
+        },
+        {
+            "objectKey": "contactUsPageSubjectField",
+            "action": "type",
+            "value": "Test Subject"
+        },
+        {
+  "objectKey": "uploadFileChooseFileButton",
+  "action": "uploadFile",
+  "value": "cypress/fixtures/common/sample-3.pdf"
+},
+
+        {
+            "objectKey": "contactUsPageMessageField",
+            "action": "type",
+            "value": "Test Message"
+        },
+
+        
+        {
+            "objectKey": "contactUsPageSubmitButton",
+            "action": "click"
+        }
+    ]
+}

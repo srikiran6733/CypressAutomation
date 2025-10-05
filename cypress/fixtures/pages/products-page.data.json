@@ -1,0 +1,37 @@
+{
+    "searchProductData": [
+        {
+            "objectKey": "productsPageSearchField",
+            "action": "type",
+            "value": "T-Shirt"
+        },
+        {
+            "objectKey": "productsPageSearchButton",
+            "action": "click"
+        }
+    ],
+    "productData": {
+        "productName": "T-Shirt"
+    },
+    "productDetails": [
+    
+    {
+        "objectKey": "productDetailsQuantityField",
+        "action": "Type",
+        "value": "4"
+    },
+    {
+        "objectKey": "addToCartButtonAfterIncreasingQuantity",
+        "action": "click"
+
+    },
+    {
+        "objectKey": "viewCartButton",
+        "action": "click"
+    }
+    ],
+    "cartPage": {
+        "firstProductQuantityElement": "4"
+    }
+
+}

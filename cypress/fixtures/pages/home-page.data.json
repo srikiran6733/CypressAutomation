@@ -1,0 +1,16 @@
+{
+    "subscriptionData": [
+        {
+            "objectKey": "subscriptionEmailAddressField",
+            "action": "type",
+            "value": "test@example.com"
+        },
+        {
+            "objectKey": "subscriptionArrowButton",
+            "action": "click"
+        }
+    ],
+    "successMessageData": {       
+        "subscriptionSuccessMessageData": "You have been successfully subscribed!" 
+    }
+}

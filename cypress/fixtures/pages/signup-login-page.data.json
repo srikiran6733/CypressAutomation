@@ -1,0 +1,174 @@
+{
+    "newUser": [
+        {
+            "objectKey": "signupNameField",
+            "action": "type",
+            "value": "TestUser"
+        },
+        {
+            "objectKey": "signupEmailAddressField",
+            "action": "type",
+            "value": "mohan456@gmail.com"
+        },
+        {
+            "objectKey": "signupButton",
+            "action": "click"
+        }
+    ],
+        "existingUser": [
+        {
+            "objectKey": "signupEmailAddressField",
+            "action": "type",
+            "value": "mohankrishna123@gmail.com"
+        },
+        {
+            "objectKey": "signupNameField",
+            "action": "type",
+            "value": "mohan456@gmail.com"
+        },
+        {
+            "objectKey": "signupButton",
+            "action": "click"
+        }
+    ],
+    "logoutUser": [
+       
+        {
+            "objectKey": "loginToYourAccountEmailField",
+            "action": "type",
+            "value": "mohankrishna123@gmail.com"
+        },
+         {
+            "objectKey": "loginToYourAccPasswordField",
+            "action": "type",
+            "value": "test@123"
+        },
+        {
+            "objectKey": "loginToYourAccLoginButton",
+            "action": "click"
+        }
+    ],
+    "loginUser": [
+       
+        {
+            "objectKey": "loginToYourAccountEmailField",
+            "action": "type",
+            "value": "mohan456@gmail.com"
+        },
+         {
+            "objectKey": "loginToYourAccPasswordField",
+            "action": "type",
+            "value": "test@123"
+        },
+        {
+            "objectKey": "loginToYourAccLoginButton",
+            "action": "click"
+        }
+    ],
+        "invalidLoginUser": [
+       
+        {
+            "objectKey": "loginToYourAccountEmailField",
+            "action": "type",
+            "value": "mohan159@gmail.com"
+        },
+         {
+            "objectKey": "loginToYourAccPasswordField",
+            "action": "type",
+            "value": "test@123"
+        },
+        {
+            "objectKey": "loginToYourAccLoginButton",
+            "action": "click"
+        }
+    ],
+    "enterAccountInfo": [
+        {
+            "objectKey": "accountInfoPasswordField",
+            "action": "type",
+            "value": "Test@1234"
+        },
+        {
+            "objectKey": "mrRadioButton",
+            "action": "click"
+        },
+        {
+            "objectKey": "daysDropdown",
+            "action": "select",
+            "value": "10"
+        },
+        {
+            "objectKey": "monthsDropdown",
+            "action": "select",
+            "value": "8"
+        },
+        {
+            "objectKey": "yearsDropdown",
+            "action": "select",
+            "value": "2000"
+        }
+    ],
+    "addressInfo": [
+        {
+            "objectKey": "firstNameField",
+            "action": "type",
+            "value": "Test"
+        },
+        {
+            "objectKey": "lastNameField",
+            "action": "type",
+            "value": "QA"
+        },
+        {
+            "objectKey": "companyField",
+            "action": "type",
+            "value": "ORACLE"
+        },
+        {
+            "objectKey": "addressField1",
+            "action": "type",
+            "value": "123 Test St"
+        },
+        {
+            "objectKey": "addressField2",
+            "action": "type",
+            "value": "Suite 100"
+        },
+        {
+            "objectKey": "countryDropdown",
+            "action": "select",
+            "value": "India"
+        },
+        {
+            "objectKey": "stateField",
+            "action": "type",
+            "value": "Karnataka"
+        },
+        {
+            "objectKey": "cityField",
+            "action": "type",
+            "value": "KR Puram"
+        },
+        {
+            "objectKey": "zipCodeField",
+            "action": "type",
+            "value": "560036"
+        },
+        {
+            "objectKey": "mobileNumberField",
+            "action": "type",
+            "value": "7894561234"
+        },
+        {
+            "objectKey": "createAccountButton",
+            "action": "click"
+        }
+    ],
+    "prePopulatedData": {
+        "signupName": "TestUser",
+        "signupEmailAddress": "mohan456@gmail.com"
+    },
+    "logoutUserPrePopulatedData": {
+        "signupName": "test"
+    }
+}
