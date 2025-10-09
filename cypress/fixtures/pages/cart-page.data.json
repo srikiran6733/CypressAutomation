@@ -1,0 +1,47 @@
+{
+    "commentText": [
+        {
+            "objectKey": "commentTextAreaField",
+            "action": "type",
+            "value": "BKJBKJBJKKJBKJBKJBKJ"
+        },
+        {
+            "objectKey": "placeOrderButton",
+            "action": "click"
+        }
+    ],
+    "paymentDetails": [
+        {
+            "objectKey": "nameOnCardField",
+            "action": "type",
+            "value": "Kiran"
+        },
+        {
+            "objectKey": "cardNumberField",
+            "action": "type",
+            "value": "1234567890123456"
+        },
+        {
+            "objectKey": "cvcField",
+            "action": "type",
+            "value": "123"
+        },
+        {
+            "objectKey": "expirationMonthField",
+            "action": "type",
+            "value": "12"
+        },
+        {
+            "objectKey": "expirationYearField",
+            "action": "type",
+            "value": "2025"
+        },
+        {
+            "objectKey": "payAndConfirmOrderButton",
+            "action": "click"
+        }
+    ],
+    "orderPlacedSuccessMessageData": {       
+        "orderPlacedSuccessMessage": "Congratulations! Your order has been confirmed!" 
+    }
+}

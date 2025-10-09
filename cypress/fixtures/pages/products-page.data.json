@@ -31,7 +31,8 @@
     }
     ],
     "cartPage": {
-        "firstProductQuantityElement": "4"
+        "firstProductQuantityElement": "4",
+        "totalPrice": 2000
     }
 
 }

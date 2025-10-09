@@ -21,9 +21,9 @@ describe('Test Case 8: Verify All Products and Product Detail Page', () => {
         cy.get(HomePage.automationExerciseLogoElement).should('be.visible');
         cy.xpath(HomePage.viewProductButton).first().should('be.visible').click()
         cy.url().should('include', '/product_details/1');
-            cy.xpath(HomePage.productDetailsSection).should('be.visible');
-            DataLoader.fillForm(ProductsPage, ProductsPageData.productDetails);
-            cy.xpath(CartPage.productQuantityInCartPageElement).should('have.text', ProductsPageData.cartPage);
+        cy.xpath(HomePage.productDetailsSection).should('be.visible');
+        DataLoader.fillForm(ProductsPage, ProductsPageData.productDetails);
+        cy.xpath(CartPage.productQuantityInCartPageElement).should('have.text', ProductsPageData.cartPage);
 
     })
 

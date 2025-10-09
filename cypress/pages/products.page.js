@@ -11,7 +11,6 @@ class ProductsPage {
     productConditionElement = '//div[@class="product-information"]/p[3]';
     productBrandElement = '//div[@class="product-information"]/p[4]';
     productQuantityElement = '//label[text()="Quantity:"]';
-
     productsPageSearchField = 'input[id="search_product"][placeholder="Search Product"]';
     productsPageSearchButton = 'button[id="submit_search"][type="button"]';
     productsPageSearchedItemsTextElement = '//div[@class="features_items"]//div[@class="col-sm-4"]';
