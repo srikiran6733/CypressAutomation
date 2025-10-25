@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="7.926" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2025-10-25T21:58:40" tests="0" file="cypress\tests\verify-subscription-in-cart-page-test.cy.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="Test Case 10: Verify Subscription in Cart Page" timestamp="2025-10-25T21:58:40" tests="1" time="7.923" failures="0">
-    <testcase name="Should verify subscription functionality in cart page" time="3.906" classname="Test Case 10: Verify Subscription in Cart Page Should verify subscription functionality in cart page">
-    </testcase>
-  </testsuite>
-</testsuites>

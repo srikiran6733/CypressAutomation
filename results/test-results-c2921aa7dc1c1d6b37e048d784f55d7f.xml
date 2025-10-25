@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="12.302" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2025-10-25T21:55:14" tests="0" file="cypress\tests\add-products-into-cart-test.cy.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="Shopping Cart Functionality" timestamp="2025-10-25T21:55:14" tests="1" time="12.298" failures="0">
-    <testcase name="Verify products can be added to cart and cart details are correct" time="8.150" classname="Shopping Cart Functionality Verify products can be added to cart and cart details are correct">
-    </testcase>
-  </testsuite>
-</testsuites>
