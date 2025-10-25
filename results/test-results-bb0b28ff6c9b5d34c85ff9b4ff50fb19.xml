@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.425" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-10-25T21:58:03" tests="0" file="cypress\tests\verify-all-products-and-product-details-page-test.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test Case 8: Verify All Products and Product Detail Page" timestamp="2025-10-25T21:58:03" tests="1" time="10.421" failures="0">
+    <testcase name="Verify All Products page and Product Detail page functionality" time="6.357" classname="Test Case 8: Verify All Products and Product Detail Page Verify All Products page and Product Detail page functionality">
+    </testcase>
+  </testsuite>
+</testsuites>

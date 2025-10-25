@@ -15,7 +15,7 @@ class CartPage {
   registerLoginLink = "//u[text()='Register / Login']";
   checkoutBreadCrumbLink = '//li[text()="Checkout"]';
   addressDetailsTextElement = '//h2[text()="Address Details"]';
-  yourDeliveryDetailsSectionElement = '#address_delivery';
+  yourDeliveryDetailsSectionElement = '//ul[@id="address_delivery"]';
   yourBillingDetailsSectionElement = '#address_invoice';
   reviewYourOrderSectionElement = '//h2[text()="Review Your Order"]';
   commentTextAreaField = 'textarea[name="message"]';

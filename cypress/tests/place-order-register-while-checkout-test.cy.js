@@ -23,10 +23,12 @@ describe("Shopping Cart Functionality-TC014", () => {
     cy.url().should("include", "automationexercise.com");
     cy.get(HomePage.automationExerciseLogoElement).should("be.visible");
 
+    cy.xpath(ProductsPage.productsList).first().trigger('mouseover').wait(2000)
+
     // ✅ Step 2: Add first product to cart
     cy.xpath(ProductsPage.firstProductAddToCartButton)
       .scrollIntoView()
-      .click();
+      .click({ focus: true, force: true });
 
     // ✅ Step 3: View Cart
     cy.xpath(ProductsPage.viewCartButton)
@@ -95,9 +97,9 @@ describe("Shopping Cart Functionality-TC014", () => {
 
     // ✅ Step 11: Verify checkout details
     cy.xpath(CartPage.checkoutBreadCrumbLink).should("be.visible");
-    cy.xpath(CartPage.addressDetailsTextElement).should("be.visible");
+    cy.xpath(CartPage.addressDetailsTextElement).wait(2000).should("be.visible");
     cy.xpath(CartPage.yourDeliveryDetailsSectionElement).should("be.visible");
-    cy.xpath(CartPage.yourBillingDetailsSectionElement).should("be.visible");
+    cy.get(CartPage.yourBillingDetailsSectionElement).should("be.visible");
     cy.xpath(CartPage.reviewYourOrderSectionElement).should("be.visible");
 
     // ✅ Step 12: Enter comment and payment details
@@ -105,9 +107,9 @@ describe("Shopping Cart Functionality-TC014", () => {
     DataLoader.fillForm(CartPage, CartPageData.paymentDetails);
 
     // ✅ Step 13: Verify order placed successfully
-    cy.xpath(CartPage.orderPlacedSuccessMessageElement)
+    cy.xpath(CartPage.orderPlacedSuccessHeaderTextElement)
       .should("be.visible")
-      .and("contain.text", CartPageData.orderPlacedSuccessMessageData.successMessage);
+      .and("contain.text", CartPageData.orderPlacedSuccessMessageData.orderPlacedSuccessMessage);
 
     cy.xpath(CartPage.continueButton)
       .should("be.visible")
@@ -123,7 +125,7 @@ describe("Shopping Cart Functionality-TC014", () => {
       .should("be.visible")
       .click();
 
-    cy.xpath(HomePage.accountDeletedHeaderTextElement)
+    cy.get(HomePage.accountDeletedHeaderTextElement)
       .should("be.visible")
       .and("contain.text", "Account Deleted!");
 

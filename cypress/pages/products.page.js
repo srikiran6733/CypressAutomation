@@ -27,6 +27,7 @@ class ProductsPage {
     viewCartButton = '//u[text()="View Cart"]';
     quantityIncreaseButton = '#quantity';
     addToCartButtonAfterIncreasingQuantity = '//button[normalize-space()="Add to cart"]';
+    productsList='//div[@class="product-image-wrapper"]';
 
     getField(fieldName) {
         if (this.hasOwnProperty(fieldName)) {

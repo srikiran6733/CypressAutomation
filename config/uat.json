@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://www.automationexercise.com/",
-    "productDetailsFractionUrl": "/product_details/1"
-    
+    "productDetailsFractionUrl": "/product_details/1",
 
+    "experimentalStudio": true
 }

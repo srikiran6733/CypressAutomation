@@ -27,14 +27,14 @@
             "value": "123"
         },
         {
-            "objectKey": "expirationMonthField",
+            "objectKey": "expiryMonthField",
             "action": "type",
-            "value": "12"
+            "value": "10"
         },
         {
-            "objectKey": "expirationYearField",
+            "objectKey": "expiryYearField",
             "action": "type",
-            "value": "2025"
+            "value": "2030"
         },
         {
             "objectKey": "payAndConfirmOrderButton",

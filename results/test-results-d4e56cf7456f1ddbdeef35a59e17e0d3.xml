@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="8.770" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-10-25T21:57:06" tests="0" file="cypress\tests\register-user-with-existing-email.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="User Registration Functionality" timestamp="2025-10-25T21:57:06" tests="1" time="8.767" failures="0">
+    <testcase name="&quot;Verify error is shown when registering with an existing email" time="5.197" classname="User Registration Functionality &quot;Verify error is shown when registering with an existing email">
+    </testcase>
+  </testsuite>
+</testsuites>

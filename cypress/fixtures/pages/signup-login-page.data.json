@@ -58,7 +58,7 @@
          {
             "objectKey": "loginToYourAccPasswordField",
             "action": "type",
-            "value": "Test@1234"
+            "value": "test@123"
         },
         {
             "objectKey": "loginToYourAccLoginButton",
