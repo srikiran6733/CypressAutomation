@@ -16,8 +16,8 @@
     "productDetails": [
     
     {
-        "objectKey": "productDetailsQuantityField",
-        "action": "Type",
+        "objectKey": "quantityIncreaseButton",
+        "action": "type",
         "value": "4"
     },
     {
@@ -31,8 +31,8 @@
     }
     ],
     "cartPage": {
-        "firstProductQuantityElement": "4",
-        "totalPrice": 2000
+        "firstProductQuantityElement": 4,
+        "totalPrice": "Rs. 2000"
     }
 
 }

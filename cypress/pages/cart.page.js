@@ -30,6 +30,7 @@ class CartPage {
   payAndConfirmOrderButton = '#submit';
   orderPlacedSuccessHeaderTextElement = '//p[text()="Congratulations! Your order has been confirmed!"]';
   continueButton = '//a[text()="Continue"]';
+  totalPrice ='//p[@class="cart_total_price"]'
   
 
 
