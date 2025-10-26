@@ -49,7 +49,6 @@
         }
     ],
     "loginUser": [
-       
         {
             "objectKey": "loginToYourAccountEmailField",
             "action": "type",
