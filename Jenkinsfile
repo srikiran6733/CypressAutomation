@@ -7,7 +7,7 @@ parameters {
     }
 
 options {
-       ansiColor('xterm')
+    // ansiColor('xterm')
     }
 
     stages {
@@ -43,3 +43,4 @@ options {
             }
         }
     } 
+}
