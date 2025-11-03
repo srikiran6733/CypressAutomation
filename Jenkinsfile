@@ -7,7 +7,8 @@ parameters {
     }
 
 options {
-    // ansiColor('xterm')
+     ansiColor('xterm')
+       bat 'npx cypress run --browser chrome'
     }
 
     stages {
