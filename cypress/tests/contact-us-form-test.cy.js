@@ -14,7 +14,7 @@ describe('Contact Us Form Functionality', () => {
 
     it('Verify user can submit Contact Us form successfully', () => {
         cy.visit(constants.baseUrl)
-        cy.url().should('include', 'automationexercis.com');
+        cy.url().should('include', 'automationexercise.com');
         cy.get(HomePage.automationExerciseLogoElement).should('be.visible');
         cy.xpath(ContactUsPage.contactUsLink).should('be.visible').click()
         cy.xpath(ContactUsPage.getInTouchHeaderTextElement).should('be.visible');
