@@ -26,5 +26,5 @@ describe('User Logout Functionality', () => {
 
     })
 
-    
+
 })

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.205" tests="3" failures="2">
+  <testsuite name="Root Suite" timestamp="2025-11-17T14:19:39" tests="0" file="cypress\tests\API Testing\httpsRequest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="reqres sample apis website" timestamp="2025-11-17T14:19:39" tests="3" time="1.203" failures="2">
+    <testcase name="List Users" time="0.000" classname="reqres sample apis website List Users">
+      <failure message="`cy.request()` failed on:
+
+https://reqres.in//api/users?page=2
+
+The response we received from your web server was:
+
+  &gt; 404: Not Found
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://reqres.in//api/users?page=2
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/15.2.0 Chrome/136.0.7103.149 Electron/36.4.0 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 404 - Not Found
+Headers: {
+  &quot;date&quot;: &quot;Mon, 17 Nov 2025 14:19:39 GMT&quot;,
+  &quot;content-type&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;transfer-encoding&quot;: &quot;chunked&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;access-control-allow-credentials&quot;: &quot;true&quot;,
+  &quot;access-control-allow-headers&quot;: &quot;Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key&quot;,
+  &quot;access-control-allow-methods&quot;: &quot;GET, POST, PUT, DELETE, OPTIONS&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;http://localhost:5173&quot;,
+  &quot;nel&quot;: &quot;{\&quot;report_to\&quot;:\&quot;heroku-nel\&quot;,\&quot;response_headers\&quot;:[\&quot;Via\&quot;],\&quot;max_age\&quot;:3600,\&quot;success_fraction\&quot;:0.01,\&quot;failure_fraction\&quot;:0.1}&quot;,
+  &quot;referrer-policy&quot;: &quot;strict-origin-when-cross-origin&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;group\&quot;:\&quot;heroku-nel\&quot;,\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https://nel.heroku.com/reports?s=G0ZqF0bWueVEqb2E11geB%2FKkF1%2BKQzIXqsF%2F8IbX5Po%3D\\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\\u0026ts=1763389037\&quot;}],\&quot;max_age\&quot;:3600}&quot;,
+  &quot;reporting-endpoints&quot;: &quot;heroku-nel=\&quot;https://nel.heroku.com/reports?s=G0ZqF0bWueVEqb2E11geB%2FKkF1%2BKQzIXqsF%2F8IbX5Po%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1763389037\&quot;&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;vary&quot;: &quot;Origin, accept-encoding&quot;,
+  &quot;via&quot;: &quot;1.1 heroku-router&quot;,
+  &quot;x-content-type-options&quot;: &quot;nosniff&quot;,
+  &quot;x-frame-options&quot;: &quot;DENY&quot;,
+  &quot;x-request-id&quot;: &quot;4fbc79b8-eb8a-bcad-ad86-ec437c56aade&quot;,
+  &quot;x-xss-protection&quot;: &quot;1; mode=block&quot;,
+  &quot;age&quot;: &quot;142&quot;,
+  &quot;cache-control&quot;: &quot;max-age=14400&quot;,
+  &quot;cf-cache-status&quot;: &quot;HIT&quot;,
+  &quot;content-encoding&quot;: &quot;gzip&quot;,
+  &quot;cf-ray&quot;: &quot;99ffdd450aac7eb6-MAA&quot;
+}
+Body: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+  ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+          &apos;gtm.start&apos;: new Date().getTime(),
+          event: &apos;gtm.js&apos;,
+      })
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != &apos;dataLayer&apos; ? &apos;&amp;l=&apos; + l : &apos;&apos;
+      j.async = true
+      j.src = &apos;https://www.googletagmanager.com/gtm.js?id=&apos; + i + dl
+      f.parentNode.insertBefore(j, f)
+  })(window, document, &apos;script&apos;, &apos;dataLayer&apos;, &apos;GTM-KB622KF&apos;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+  name=&quot;viewport&quot;
+  content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+  name=&quot;description&quot;
+  content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+  Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+  href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+  rel=&quot;stylesheet&quot;
+        /&gt;
+        &lt;link
+  rel=&quot;icon&quot;
+  type=&quot;image/png&quot;
+  href=&quot;/img/logo-dark.jpg&quot;
+  alt=&quot;ReqRes Logo&quot;
+        /&gt;
+        &lt;link rel=&quot;canonical&quot; href=&quot;https://reqres.in/&quot; /&gt;
+        &lt;meta property=&quot;og:title&quot; content=&quot;&quot; /&gt;
+        &lt;meta property=&quot;og:description&quot; content=&quot;&quot; /&gt;
+        &lt;meta property=&quot;og:image&quot; content=&quot;/img/logo-dark.jpg&quot; /&gt;
+        &lt;meta property=&quot;og:url&quot; content=&quot;https://reqres.in/&quot; /&gt;
+        &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+        &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+        &lt;meta name=&quot;twitter:title&quot; content=&quot;&quot; /&gt;
+        &lt;meta name=&quot;twit...
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://reqres.in//api/users?page=2
+
+The response we received from your web server was:
+
+  > 404: Not Found
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://reqres.in//api/users?page=2
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/15.2.0 Chrome/136.0.7103.149 Electron/36.4.0 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate"
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 404 - Not Found
+Headers: {
+  "date": "Mon, 17 Nov 2025 14:19:39 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "keep-alive",
+  "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key",
+  "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "access-control-allow-origin": "http://localhost:5173",
+  "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=G0ZqF0bWueVEqb2E11geB%2FKkF1%2BKQzIXqsF%2F8IbX5Po%3D\\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\\u0026ts=1763389037\"}],\"max_age\":3600}",
+  "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=G0ZqF0bWueVEqb2E11geB%2FKkF1%2BKQzIXqsF%2F8IbX5Po%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1763389037\"",
+  "server": "cloudflare",
+  "vary": "Origin, accept-encoding",
+  "via": "1.1 heroku-router",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-request-id": "4fbc79b8-eb8a-bcad-ad86-ec437c56aade",
+  "x-xss-protection": "1; mode=block",
+  "age": "142",
+  "cache-control": "max-age=14400",
+  "cf-cache-status": "HIT",
+  "content-encoding": "gzip",
+  "cf-ray": "99ffdd450aac7eb6-MAA"
+}
+Body: <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+  ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+      })
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+  name="description"
+  content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+  Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+  href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+  rel="stylesheet"
+        />
+        <link
+  rel="icon"
+  type="image/png"
+  href="/img/logo-dark.jpg"
+  alt="ReqRes Logo"
+        />
+        <link rel="canonical" href="https://reqres.in/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="/img/logo-dark.jpg" />
+        <meta property="og:url" content="https://reqres.in/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="" />
+        <meta name="twit...
+
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:52867/__cypress/runner/cypress_runner.js:136268:72)
+    at tryCatcher (http://localhost:52867/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise._settlePromiseFromHandler (http://localhost:52867/__cypress/runner/cypress_runner.js:1489:31)
+    at Promise._settlePromise (http://localhost:52867/__cypress/runner/cypress_runner.js:1546:18)
+    at Promise._settlePromise0 (http://localhost:52867/__cypress/runner/cypress_runner.js:1591:10)
+    at Promise._settlePromises (http://localhost:52867/__cypress/runner/cypress_runner.js:1671:18)
+    at _drainQueueStep (http://localhost:52867/__cypress/runner/cypress_runner.js:2377:12)
+    at _drainQueue (http://localhost:52867/__cypress/runner/cypress_runner.js:2370:9)
+    at Async._drainQueues (http://localhost:52867/__cypress/runner/cypress_runner.js:2386:5)
+    at Async.drainQueues (http://localhost:52867/__cypress/runner/cypress_runner.js:2256:14)
+From Your Spec Code:
+    at Context.eval (webpack://cypressautomation/./cypress/tests/API Testing/httpsRequest.cy.js:3:11)]]></failure>
+    </testcase>
+    <testcase name="Single User" time="0.000" classname="reqres sample apis website Single User">
+      <failure message="`cy.request()` failed on:
+
+https://reqres.in//api/users/2
+
+The response we received from your web server was:
+
+  &gt; 404: Not Found
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://reqres.in//api/users/2
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/15.2.0 Chrome/136.0.7103.149 Electron/36.4.0 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 404 - Not Found
+Headers: {
+  &quot;date&quot;: &quot;Mon, 17 Nov 2025 14:19:40 GMT&quot;,
+  &quot;content-type&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;transfer-encoding&quot;: &quot;chunked&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;access-control-allow-credentials&quot;: &quot;true&quot;,
+  &quot;access-control-allow-headers&quot;: &quot;Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key&quot;,
+  &quot;access-control-allow-methods&quot;: &quot;GET, POST, PUT, DELETE, OPTIONS&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;http://localhost:5173&quot;,
+  &quot;nel&quot;: &quot;{\&quot;report_to\&quot;:\&quot;heroku-nel\&quot;,\&quot;response_headers\&quot;:[\&quot;Via\&quot;],\&quot;max_age\&quot;:3600,\&quot;success_fraction\&quot;:0.01,\&quot;failure_fraction\&quot;:0.1}&quot;,
+  &quot;referrer-policy&quot;: &quot;strict-origin-when-cross-origin&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;group\&quot;:\&quot;heroku-nel\&quot;,\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https://nel.heroku.com/reports?s=DYFJi%2Bawm52GZQ%2B%2Bv4VfwIEkMfE%2FCFCL6Y%2FJwhTsxmU%3D\\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\\u0026ts=1763389038\&quot;}],\&quot;max_age\&quot;:3600}&quot;,
+  &quot;reporting-endpoints&quot;: &quot;heroku-nel=\&quot;https://nel.heroku.com/reports?s=DYFJi%2Bawm52GZQ%2B%2Bv4VfwIEkMfE%2FCFCL6Y%2FJwhTsxmU%3D&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;ts=1763389038\&quot;&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;vary&quot;: &quot;Origin, accept-encoding&quot;,
+  &quot;via&quot;: &quot;1.1 heroku-router&quot;,
+  &quot;x-content-type-options&quot;: &quot;nosniff&quot;,
+  &quot;x-frame-options&quot;: &quot;DENY&quot;,
+  &quot;x-request-id&quot;: &quot;48ee9670-5bd2-23df-8c53-07d8421123dd&quot;,
+  &quot;x-xss-protection&quot;: &quot;1; mode=block&quot;,
+  &quot;age&quot;: &quot;142&quot;,
+  &quot;cache-control&quot;: &quot;max-age=14400&quot;,
+  &quot;cf-cache-status&quot;: &quot;HIT&quot;,
+  &quot;content-encoding&quot;: &quot;gzip&quot;,
+  &quot;cf-ray&quot;: &quot;99ffdd48dde87eb6-MAA&quot;
+}
+Body: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+  ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+          &apos;gtm.start&apos;: new Date().getTime(),
+          event: &apos;gtm.js&apos;,
+      })
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != &apos;dataLayer&apos; ? &apos;&amp;l=&apos; + l : &apos;&apos;
+      j.async = true
+      j.src = &apos;https://www.googletagmanager.com/gtm.js?id=&apos; + i + dl
+      f.parentNode.insertBefore(j, f)
+  })(window, document, &apos;script&apos;, &apos;dataLayer&apos;, &apos;GTM-KB622KF&apos;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+  name=&quot;viewport&quot;
+  content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+  name=&quot;description&quot;
+  content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+  Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+  href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+  rel=&quot;stylesheet&quot;
+        /&gt;
+        &lt;link
+  rel=&quot;icon&quot;
+  type=&quot;image/png&quot;
+  href=&quot;/img/logo-dark.jpg&quot;
+  alt=&quot;ReqRes Logo&quot;
+        /&gt;
+        &lt;link rel=&quot;canonical&quot; href=&quot;https://reqres.in/&quot; /&gt;
+        &lt;meta property=&quot;og:title&quot; content=&quot;&quot; /&gt;
+        &lt;meta property=&quot;og:description&quot; content=&quot;&quot; /&gt;
+        &lt;meta property=&quot;og:image&quot; content=&quot;/img/logo-dark.jpg&quot; /&gt;
+        &lt;meta property=&quot;og:url&quot; content=&quot;https://reqres.in/&quot; /&gt;
+        &lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+        &lt;meta name=&quot;twitter:card&quot; content=&quot;summary_large_image&quot; /&gt;
+        &lt;meta name=&quot;twitter:title&quot; content=&quot;&quot; /&gt;
+        &lt;meta name=&quot;twit...
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://reqres.in//api/users/2
+
+The response we received from your web server was:
+
+  > 404: Not Found
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://reqres.in//api/users/2
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/15.2.0 Chrome/136.0.7103.149 Electron/36.4.0 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate"
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 404 - Not Found
+Headers: {
+  "date": "Mon, 17 Nov 2025 14:19:40 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "keep-alive",
+  "access-control-allow-credentials": "true",
+  "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key",
+  "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS",
+  "access-control-allow-origin": "http://localhost:5173",
+  "nel": "{\"report_to\":\"heroku-nel\",\"response_headers\":[\"Via\"],\"max_age\":3600,\"success_fraction\":0.01,\"failure_fraction\":0.1}",
+  "referrer-policy": "strict-origin-when-cross-origin",
+  "report-to": "{\"group\":\"heroku-nel\",\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?s=DYFJi%2Bawm52GZQ%2B%2Bv4VfwIEkMfE%2FCFCL6Y%2FJwhTsxmU%3D\\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\\u0026ts=1763389038\"}],\"max_age\":3600}",
+  "reporting-endpoints": "heroku-nel=\"https://nel.heroku.com/reports?s=DYFJi%2Bawm52GZQ%2B%2Bv4VfwIEkMfE%2FCFCL6Y%2FJwhTsxmU%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1763389038\"",
+  "server": "cloudflare",
+  "vary": "Origin, accept-encoding",
+  "via": "1.1 heroku-router",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "x-request-id": "48ee9670-5bd2-23df-8c53-07d8421123dd",
+  "x-xss-protection": "1; mode=block",
+  "age": "142",
+  "cache-control": "max-age=14400",
+  "cf-cache-status": "HIT",
+  "content-encoding": "gzip",
+  "cf-ray": "99ffdd48dde87eb6-MAA"
+}
+Body: <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+  ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+      })
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+  name="description"
+  content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+  Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+  href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+  rel="stylesheet"
+        />
+        <link
+  rel="icon"
+  type="image/png"
+  href="/img/logo-dark.jpg"
+  alt="ReqRes Logo"
+        />
+        <link rel="canonical" href="https://reqres.in/" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="/img/logo-dark.jpg" />
+        <meta property="og:url" content="https://reqres.in/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="" />
+        <meta name="twit...
+
+
+https://on.cypress.io/request
+    at <unknown> (http://localhost:52867/__cypress/runner/cypress_runner.js:136268:72)
+    at tryCatcher (http://localhost:52867/__cypress/runner/cypress_runner.js:1777:23)
+    at Promise._settlePromiseFromHandler (http://localhost:52867/__cypress/runner/cypress_runner.js:1489:31)
+    at Promise._settlePromise (http://localhost:52867/__cypress/runner/cypress_runner.js:1546:18)
+    at Promise._settlePromise0 (http://localhost:52867/__cypress/runner/cypress_runner.js:1591:10)
+    at Promise._settlePromises (http://localhost:52867/__cypress/runner/cypress_runner.js:1671:18)
+    at _drainQueueStep (http://localhost:52867/__cypress/runner/cypress_runner.js:2377:12)
+    at _drainQueue (http://localhost:52867/__cypress/runner/cypress_runner.js:2370:9)
+    at Async._drainQueues (http://localhost:52867/__cypress/runner/cypress_runner.js:2386:5)
+    at Async.drainQueues (http://localhost:52867/__cypress/runner/cypress_runner.js:2256:14)
+From Your Spec Code:
+    at Context.eval (webpack://cypressautomation/./cypress/tests/API Testing/httpsRequest.cy.js:12:11)]]></failure>
+    </testcase>
+    <testcase name="Single User not found" time="0.116" classname="reqres sample apis website Single User not found">
+    </testcase>
+  </testsuite>
+</testsuites>

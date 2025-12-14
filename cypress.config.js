@@ -34,7 +34,7 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "cypress/tests/**/*.cy.js", // update if your path differs
 
-    retries: 2,   // retries in CI (will retry failing tests automatically in same run)
+    //retries: 2,   // retries in CI (will retry failing tests automatically in same run)
 
     setupNodeEvents(on, config) {
       failedLog(on);   // creates cypress/failures.txt with failed specs

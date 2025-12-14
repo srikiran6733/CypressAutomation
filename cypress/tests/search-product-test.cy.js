@@ -23,7 +23,7 @@ describe('Product Search Functionality', () => {
         DataLoader.fillForm(ProductsPage, ProductsPageData.searchProductData);
         cy.xpath(ProductsPage.productsPageSearchedItemsTextElement).should('be.visible');
         cy.xpath(ProductsPage.ProductsPageAllSearchedRelatedTextElement).each(($el) => {
-            cy.wrap($el).should('contain.text', ProductsPageData.productData.productName)
+        cy.wrap($el).should('contain.text', ProductsPageData.productData.productName)
         })
     })
 

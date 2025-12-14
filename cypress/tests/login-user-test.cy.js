@@ -34,7 +34,7 @@ describe('Login Functionality', () => {
     })
 
     it('should login user with correct email and password', () => {
- cy.visit(constants.baseUrl)
+        cy.visit(constants.baseUrl)
         cy.title().should('include', 'Automation Exercise')
         cy.url().should('include', 'automationexercise.com')
         cy.get(HomePage.automationExerciseLogoElement).should('be.visible');
@@ -45,11 +45,11 @@ describe('Login Functionality', () => {
         cy.xpath(HomePage.deleteAccountLink).should('be.visible').click();
         cy.get(HomePage.accountDeletedHeaderTextElement).should('be.visible').and('contain.text', 'Account Deleted!');
         //cy.xpath(HomePage.continueButtonAfterAccountDeleted).should('be.visible').click();
-  
+
     });
 
-        it('should not login user with incorrect email and password', () => {
-            cy.visit(constants.baseUrl);
+    it('should not login user with incorrect email and password', () => {
+        cy.visit(constants.baseUrl);
         cy.title().should('include', 'Automation Exercise')
         cy.url().should('include', 'automationexercise.com')
         cy.get(HomePage.automationExerciseLogoElement).should('be.visible');

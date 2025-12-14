@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.387" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-11-19T14:54:30" tests="0" file="cypress\tests\API Testing\httpsRequest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API testing" timestamp="2025-11-19T14:54:30" tests="1" time="0.381" failures="0">
+    <testcase name="passing query parameters in GET request" time="0.350" classname="API testing passing query parameters in GET request">
+    </testcase>
+  </testsuite>
+</testsuites>

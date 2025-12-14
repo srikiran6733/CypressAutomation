@@ -6,12 +6,7 @@ class dataLoader {
         cy.log("dropdown locator is: " + currentDdnLocator);
         let currentOptionLocator = this.getDropdownValueLocator(ddnName, ddnValue);
         cy.log("Option locator: " + currentOptionLocator);
-        cy.get(currentDdnLocator).scrollIntoView().should("be.visible").select(ddnValue); // ✅ select directly on <select>;
-       /* cy.get(currentDdnLocator).click();
-        // eslint-disable-next-line cypress/no-unnecessary-waiting 
-        cy.wait(1000);
-        cy.get(currentOptionLocator).scrollIntoView().should("be.visible");
-        cy.get(currentOptionLocator).click();*/
+        cy.get(currentDdnLocator).scrollIntoView().should("be.visible").select(ddnValue);
     }
 
     getDropdownLocator(dropDownName) {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.661" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-11-17T15:21:27" tests="0" file="cypress\tests\API Testing\httpsRequest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="reqres sample apis website" timestamp="2025-11-17T15:21:27" tests="1" time="0.660" failures="0">
+    <testcase name="Single User not found" time="0.641" classname="reqres sample apis website Single User not found">
+    </testcase>
+  </testsuite>
+</testsuites>

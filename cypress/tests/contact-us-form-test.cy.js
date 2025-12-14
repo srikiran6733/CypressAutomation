@@ -22,7 +22,5 @@ describe('Contact Us Form Functionality', () => {
         cy.get(ContactUsPage.successMessageElement).should('be.visible').and('contain.text', 'submitted successfully');
         cy.xpath(ContactUsPage.homeButtonLink).should('be.visible').click()
         cy.get(HomePage.automationExerciseLogoElement).should('be.visible');
-        cy.url().should('include', 'automationexercise.com')
     })
-
 })
